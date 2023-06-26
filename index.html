@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { /* CUSTOM COLOURS */
+            snotgreen: '#596E5C', 
+            pooltablegreen: '#142609',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-snotgreen">
+  <header class="bg-pooltablegreen border-b-2 border-black py-4">
+    <div class="container mx-auto flex items-center justify-between relative">
+        <image src="images/Hamburger Closed.svg" width="auto" class="pl-4">
+        <nav>
+            <ul class="flex">
+                <li>
+                <a href="#" class="font-medium text-snotgreen px-4 py-2 hover:bg-snotgreen rounded-md hover:text-white transition">About</a>
+                </li>
+                <li>
+                <a href="#" class="font-medium text-snotgreen px-4 py-2 hover:bg-snotgreen rounded-md hover:text-white transition">Projects</a>
+                </li>
+                <li>
+                <a href="#" class="font-medium text-snotgreen px-4 py-2 hover:bg-snotgreen rounded-md hover:text-white transition">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <section class="bg-pooltablegreen h-96 py-20 px-24 flex">
+    <div>
+        <h1 class="py-2 text-6xl font-medium text-white">Hi, I'm <strong>Jake</strong>.</h1>
+        <h2 class="py-2 text-2xl font-medium text-slate-400">I'm a developer for hire.</h2>
+    </div>
+    <div class="">
+        <image src="images/headshot.svg" class="float-right"></image>
+    </div>
+  </section>
+</body>
+</html>
